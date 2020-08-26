@@ -20,6 +20,7 @@ namespace github_action_demo.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.MachineName = $"MachineName: {Environment.MachineName}";
             return View();
         }
 
